@@ -5,7 +5,10 @@ class employee{
 		int n,f=0,x;
 		System.out.print("Enter Number of Employees");
 		n=sn.nextInt();
-		emp e[]=new emp[10];
+		emp e[]=new emp[n];
+		for (int i=0;i<n;i++) {
+			e[i]=new emp();
+		}
 		for (int i=0;i<n;i++){
 			System.out.println("Enter Details of Employees:"+(i+1));
 			e[i].read();
@@ -42,8 +45,8 @@ class emp{
 	}
 	void display()
 	{
-		System.out.print("Eno:"+eno);
-		System.out.print("Name:"+ename);
-		System.out.print("Salary:"+salary);
+		System.out.println("Eno:"+eno);
+		System.out.println("Name:"+ename);
+		System.out.println("Salary:"+salary);
 	}
 }
