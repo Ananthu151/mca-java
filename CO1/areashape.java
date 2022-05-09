@@ -66,8 +66,8 @@ class findarea{
 	void area(int a,int b,int c)
 	{
 		double aa;
-		int s=a+b+c;
-		aa=Math.sqrt((s-a)*(s-b)*(s-c));
+		float s=(a+b+c)/2;
+		aa=Math.sqrt(s*(s-a)*(s-b)*(s-c));
 		System.out.println("Area of Triangle is:"+aa);
 	}
 
