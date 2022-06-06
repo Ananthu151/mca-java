@@ -28,12 +28,11 @@ class fiba implements Runnable
 		System.out.println("Enter n for fibonacci series:");
 		n=sn.nextInt();
 		System.out.println("Fibonacci series:");
-		while(i<n)
+		System.out.print("0 1");
+		while(i<n-2)
 		{
-			
-			
-			System.out.print(" "+c);
 			c=a+b;
+			System.out.print(" "+c);
 			a=b;
 			b=c;
 			i++;
