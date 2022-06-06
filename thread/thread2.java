@@ -8,6 +8,7 @@ class evenornot implements Runnable
 	{
 		System.out.println("Enter n for even numbers:");
 		n=sn.nextInt();
+		System.out.println("Even Numbers:");
 		for (int i=1;i<=n;i++) {
 			if(i%2==0)
 			{
@@ -26,6 +27,7 @@ class fiba implements Runnable
 	{
 		System.out.println("Enter n for fibonacci series:");
 		n=sn.nextInt();
+		System.out.println("Fibonacci series:");
 		while(i<n)
 		{
 			
