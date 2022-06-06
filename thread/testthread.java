@@ -13,26 +13,30 @@ class multi extends Thread
 }
 class prime extends Thread
 {
-	int n,f=1;
+	int n,f=0,i=2;
 	Scanner sn=new Scanner(System.in);
 	public void run()
 	{
 		System.out.println("Enter n:");
 		n=sn.nextInt();
-		for(int i=2;i<=n;i++){
+		System.out.println("Prime Numbers:");
+		while(i<=n)
+		{
 			for(int j=2;j<i/2;j++)
 			{
-				if(i%j==0){
-					f=0;
-				}				
-
-				if(f!=0){
-					System.out.println(i);
+				if(i%j==0)
+				{
+					f=1;
+					break;
 				}
 			}
-		f=1;
+			if(f!=1)
+			{
+				System.out.print(" "+i);
+			}
+			i++;
+			f=0;
 		}
-			
 	}
 
 }
