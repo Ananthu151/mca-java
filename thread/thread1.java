@@ -22,7 +22,7 @@ class prime extends Thread
 		System.out.println("Prime Numbers:");
 		while(i<=n)
 		{
-			for(int j=2;j<i/2;j++)
+			for(int j=2;j<i;j++)
 			{
 				if(i%j==0)
 				{
